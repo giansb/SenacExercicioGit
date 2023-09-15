@@ -35,7 +35,6 @@ public class Mensagem {
     
     public String mensagemSortida(){
         int num = (int) (Math.random() * contas.length-1);
-        System.out.println(contas[num]);
         
          return contas[num];
     }
