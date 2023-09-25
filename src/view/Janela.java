@@ -8,6 +8,7 @@ package view;
 import javax.swing.Icon;
 import javax.swing.JOptionPane;
 import mensagemdodia.Mensagem;
+import mensagemdodia.MensagemDoDiaTestes;
 
 
 public class Janela extends javax.swing.JFrame {
@@ -89,9 +90,18 @@ public class Janela extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Mensagem m = new Mensagem();
-        m.mensagemSortida();
+        String mensagem = m.mensagemDoDia();
         
-        JOptionPane.showMessageDialog(this, m.mensagemSortida());
+        
+        JOptionPane.showMessageDialog(this, mensagem);
+        
+        //MensagemDoDiaTestes mt = new MensagemDoDiaTestes();
+        //mt.testarMensagemSortida(mensagem);
+        
+        
+        
+        //mt.testarTamanhoArray(28);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
